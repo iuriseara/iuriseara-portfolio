@@ -11,6 +11,8 @@ import {
   Badge
 } from '@chakra-ui/react';
 import { FaGithub, FaYoutube } from 'react-icons/fa';
+import { IoShareOutline } from "react-icons/io5";
+
 
 
 export default function Card({title, image, description, tech, repo, website, youtube}) {
@@ -76,7 +78,7 @@ const bgColor = {
                 <FaGithub size={28} color={color[colorMode]}/>
             </Link>
             <Link href={`${website}`} isExternal color={color[colorMode]}>
-                <Text fontWeight={700} fontSize={'lg'}>Live</Text>
+                <IoShareOutline size={30} color={color[colorMode]}/>
             </Link>
         </Stack>
 
