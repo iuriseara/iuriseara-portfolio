@@ -17,7 +17,7 @@ import {
         <svg 
         width={32}
         height={32} 
-        fill={'white'}
+        fill={useColorModeValue('black', 'white')}
         id="Layer_1" data-name="Layer 1" 
         xmlns="http://www.w3.org/2000/svg" 
         viewBox="0 0 150.77 269.8">
@@ -74,7 +74,7 @@ import {
           spacing={4}
           justify={'center'}
           align={'center'}>
-          <Logo />
+          <Logo/>
           <Stack direction={'row'} spacing={6}>
             <Link href={'#'}>Home</Link>
             <Link href={'#'}>About</Link>
